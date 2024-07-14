@@ -31,23 +31,23 @@ class CelebA(data.Dataset):
     def preprocess(self):
         """Preprocess the CelebA attribute file."""
         lines = [line.rstrip() for line in open(self.attr_path, 'r')]
-        all_attr_names = lines[1].split()
+        all_attr_names = lines[0].split(',')
         for i, attr_name in enumerate(all_attr_names):
             self.attr2idx[attr_name] = i
             self.idx2attr[i] = attr_name
 
-        lines = lines[2:]
+        lines = lines[1:]
         random.seed(1234)
         random.shuffle(lines)
         for i, line in enumerate(lines):
-            split = line.split()
+            split = line.split(',')
             filename = split[0]
             values = split[1:]
 
             label = []
             for attr_name in self.selected_attrs:
                 idx = self.attr2idx[attr_name]
-                label.append(values[idx] == '1')
+                label.append(values[idx - 1] == '1')
 
             if (i+1) < 2000:
                 self.test_dataset.append([filename, label])
