@@ -2,7 +2,7 @@
 
 New: StarGAN v2 is available at https://github.com/clovaai/stargan-v2
 
-**You can run the code directly [here](https://www.kaggle.com/code/xyang2002/stargan-299fac). We have modified some code problems that existed in the original training process.**
+**You can run the code directly [here](https://www.kaggle.com/code/xyang2002/stargan-299fac). We have modified some errors that existed in the original training process.**
 
 This repository is forked from the official PyTorch implementation of the following paper:
 > **StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation**<br>
@@ -21,8 +21,6 @@ This repository is forked from the official PyTorch implementation of the follow
 ## Downloading datasets
 To download the CelebA dataset:
 ```bash
-git clone https://github.com/yunjey/StarGAN.git
-cd StarGAN/
 bash download.sh celeba
 ```
 
