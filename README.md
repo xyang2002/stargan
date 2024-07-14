@@ -1,10 +1,8 @@
-## StarGAN - Official PyTorch Implementation
+## StarGAN
 
-**\*\*\*\*\* New: StarGAN v2 is available at https://github.com/clovaai/stargan-v2 \*\*\*\*\***
+New: StarGAN v2 is available at https://github.com/clovaai/stargan-v2
 
-<p align="center"><img width="100%" src="jpg/main.jpg" /></p>
-
-This repository provides the official PyTorch implementation of the following paper:
+This repository is forked from the official PyTorch implementation of the following paper:
 > **StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation**<br>
 > [Yunjey Choi](https://github.com/yunjey)<sup>1,2</sup>, [Minje Choi](https://github.com/mjc92)<sup>1,2</sup>, [Munyoung Kim](https://www.facebook.com/munyoung.kim.1291)<sup>2,3</sup>, [Jung-Woo Ha](https://www.facebook.com/jungwoo.ha.921)<sup>2</sup>, [Sung Kim](https://www.cse.ust.hk/~hunkim/)<sup>2,4</sup>, [Jaegul Choo](https://sites.google.com/site/jaegulchoo/)<sup>1,2</sup>    <br/>
 > <sup>1</sup>Korea University, <sup>2</sup>Clova AI Research, NAVER Corp. <br>
@@ -17,7 +15,6 @@ This repository provides the official PyTorch implementation of the following pa
 * [Python 3.5+](https://www.continuum.io/downloads)
 * [PyTorch 0.4.0+](http://pytorch.org/)
 * [TensorFlow 1.3+](https://www.tensorflow.org/) (optional for tensorboard)
-
 
 ## Downloading datasets
 To download the CelebA dataset:
@@ -109,16 +106,6 @@ $ python main.py --mode test --dataset CelebA --image_size 128 --c_dim 5 \
                  --result_dir='stargan_celeba_128/results'
 ```
 
-## Citation
-If you find this work useful for your research, please cite our [paper](https://arxiv.org/abs/1711.09020):
-```
-@inproceedings{choi2018stargan,
-author={Yunjey Choi and Minje Choi and Munyoung Kim and Jung-Woo Ha and Sunghun Kim and Jaegul Choo},
-title={StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation},
-booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-year={2018}
-}
-```
 
 ## Acknowledgements
-This work was mainly done while the first author did a research internship at [Clova AI Research, NAVER](https://clova.ai/en/research/research-area-detail.html?id=0). We thank all the researchers at NAVER, especially Donghyun Kwak, for insightful discussions.
+Thanks to the original authors for making their code open source and available for the community to use and learn from.
